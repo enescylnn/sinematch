@@ -1,0 +1,135 @@
+name: SineMatch Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  build-android:
+    name: Build Android APK + AAB
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Detect Flutter project
+        id: project
+        shell: bash
+        run: |
+          set -e
+          if [ -f "pubspec.yaml" ]; then
+            echo "dir=." >> "$GITHUB_OUTPUT"
+          elif [ -f "app/pubspec.yaml" ]; then
+            echo "dir=app" >> "$GITHUB_OUTPUT"
+          else
+            FOUND="$(find . -maxdepth 3 -name pubspec.yaml -type f | head -n 1 || true)"
+            if [ -z "$FOUND" ]; then
+              echo "ERROR: pubspec.yaml bulunamadi."
+              find . -maxdepth 3 -type f | sort | head -n 200
+              exit 1
+            fi
+            DIR="$(dirname "$FOUND")"
+            echo "dir=$DIR" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Setup Flutter 3.47.2
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.47.2"
+          channel: stable
+          cache: true
+
+      - name: Flutter doctor
+        working-directory: ${{ steps.project.outputs.dir }}
+        run: flutter doctor -v
+
+      - name: Create Android platform if missing
+        working-directory: ${{ steps.project.outputs.dir }}
+        shell: bash
+        run: |
+          set -e
+          if [ ! -d "android" ]; then
+            flutter create --platforms=android --org com.sinematch .
+          fi
+
+      - name: Get dependencies
+        working-directory: ${{ steps.project.outputs.dir }}
+        run: flutter pub get
+
+      - name: Generate launcher icons if configured
+        working-directory: ${{ steps.project.outputs.dir }}
+        shell: bash
+        run: |
+          if grep -q "flutter_launcher_icons:" pubspec.yaml; then
+            dart run flutter_launcher_icons || true
+          fi
+
+      - name: Flutter analyze
+        working-directory: ${{ steps.project.outputs.dir }}
+        shell: bash
+        run: |
+          flutter analyze --no-fatal-infos --no-fatal-warnings
+
+      - name: Build release APK
+        working-directory: ${{ steps.project.outputs.dir }}
+        run: >
+          flutter build apk
+          --release
+          --dart-define=API_BASE_URL=https://site-demo.com.tr
+
+      - name: Build release AAB
+        working-directory: ${{ steps.project.outputs.dir }}
+        run: >
+          flutter build appbundle
+          --release
+          --dart-define=API_BASE_URL=https://site-demo.com.tr
+
+      - name: Prepare artifacts
+        working-directory: ${{ steps.project.outputs.dir }}
+        shell: bash
+        run: |
+          set -e
+          mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk dist/SineMatch-release.apk
+          cp build/app/outputs/bundle/release/app-release.aab dist/SineMatch-release.aab
+          sha256sum dist/SineMatch-release.apk > dist/SHA256.txt
+          sha256sum dist/SineMatch-release.aab >> dist/SHA256.txt
+          ls -lh dist
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: SineMatch-APK
+          path: ${{ steps.project.outputs.dir }}/dist/SineMatch-release.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: SineMatch-AAB
+          path: ${{ steps.project.outputs.dir }}/dist/SineMatch-release.aab
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: SineMatch-SHA256
+          path: ${{ steps.project.outputs.dir }}/dist/SHA256.txt
+          if-no-files-found: error
+          retention-days: 30
