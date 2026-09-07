@@ -1,0 +1,367 @@
+[
+  {
+    "path": ".github/workflows/mobile-build.yml",
+    "size": 1913,
+    "sha256": "87f510a2b878afb6612b99fdbd9655494a1f3c9083bf86680853dfb98125a715"
+  },
+  {
+    "path": ".gitignore",
+    "size": 285,
+    "sha256": "def0f7a904ffa6c98768a18a9ddbc93f1705c96a11649d4be46f47018cfaab4c"
+  },
+  {
+    "path": "README.md",
+    "size": 2982,
+    "sha256": "82828d13bd9e9f6cf88d66eb0b680ca8a3498afde038a84fc21b0c7a77ee4816"
+  },
+  {
+    "path": "app/README.md",
+    "size": 497,
+    "sha256": "59207d0dc2125565a136a8e13d57b1a850d50db01940dce72349e86459539038"
+  },
+  {
+    "path": "app/analysis_options.yaml",
+    "size": 145,
+    "sha256": "55f3681f27cebb7d2753b8d1728470c764fcdfc795e05a319d1709fab3440115"
+  },
+  {
+    "path": "app/assets/brand/app_icon.png",
+    "size": 497189,
+    "sha256": "05ec8b3dea995add726c20e9eb3ef266dcaa5da2ec6ceb1f99c04c009f8d1971"
+  },
+  {
+    "path": "app/assets/brand/logo_presentation.png",
+    "size": 1411106,
+    "sha256": "9c5695d33c8f020a05e2003c0a9051a04c0e4adc4a788c5d0cdedb526ffa92ff"
+  },
+  {
+    "path": "app/assets/brand/promo_board_1.png",
+    "size": 2435427,
+    "sha256": "d8d6f557cc20a45fbd9a1596eef85e9b4eeadad6685df003cd76f811f17609d2"
+  },
+  {
+    "path": "app/assets/brand/promo_board_2.png",
+    "size": 2390829,
+    "sha256": "a40ea09aa4c97d5311b8465b8d23ffaa0a0a22696f974a780b86d2818a5c1f5e"
+  },
+  {
+    "path": "app/lib/config/app_config.dart",
+    "size": 370,
+    "sha256": "e1381d295a8fd1e5796d11ee63af0a7d183a7ab50b9a438cbfbe50092d78a835"
+  },
+  {
+    "path": "app/lib/core/network/api_client.dart",
+    "size": 2217,
+    "sha256": "ab422ace5d4eee03c84059dc5953e83e8b6ed4f2b9a622d1d937b4630145cd75"
+  },
+  {
+    "path": "app/lib/core/network/api_exception.dart",
+    "size": 187,
+    "sha256": "8e4df521e4401d5f3cba16d6daffe000ac5e3e12bb237e73e051d0a4a5e641a2"
+  },
+  {
+    "path": "app/lib/core/storage/token_store.dart",
+    "size": 710,
+    "sha256": "744341aaa65bfe91fd7514a4123ad76bb5b69c8718245e6144d108803c88b5fc"
+  },
+  {
+    "path": "app/lib/core/theme/app_theme.dart",
+    "size": 3266,
+    "sha256": "a5fc38356a1434d83d00879c260cb3553641db9b2f35962ee1c67a901c8dab27"
+  },
+  {
+    "path": "app/lib/core/widgets/async_button.dart",
+    "size": 897,
+    "sha256": "171968e36c106ab513a596e0c515f57b24de1a411797303152ba0cedeed64737"
+  },
+  {
+    "path": "app/lib/core/widgets/avatar_view.dart",
+    "size": 1219,
+    "sha256": "56e3c59ff5e3c720bb9866a7fa21d769f46f624a363150ac3260456719882a1e"
+  },
+  {
+    "path": "app/lib/core/widgets/empty_state.dart",
+    "size": 1141,
+    "sha256": "e2902bc430d0615747e27bed59cfac6085e37aa9177b644f7677498ba9f77e2b"
+  },
+  {
+    "path": "app/lib/core/widgets/movie_poster.dart",
+    "size": 2694,
+    "sha256": "7b0365afaa6799123c99812ffd839d748b894c9a745178b873a35a9979397913"
+  },
+  {
+    "path": "app/lib/core/widgets/paywall_popup.dart",
+    "size": 2750,
+    "sha256": "042958f7584c16dcae6d3e59a1557ab632114e0622e701fa82f19473ef48afef"
+  },
+  {
+    "path": "app/lib/core/widgets/sine_logo.dart",
+    "size": 1274,
+    "sha256": "08cbf92a601cf2978db0bd502b69550b639c618dd842e76d374a04885d2669f0"
+  },
+  {
+    "path": "app/lib/main.dart",
+    "size": 1795,
+    "sha256": "59ec3065e3559e6fe5ae00ca368f7d47080bcb088f97d9b0383dfbf86a4be48e"
+  },
+  {
+    "path": "app/lib/models/app_notification.dart",
+    "size": 770,
+    "sha256": "95c17e13e211387fc916d97c4b528b6c82cf50b73d98d768f30960bda2e1f1c7"
+  },
+  {
+    "path": "app/lib/models/app_user.dart",
+    "size": 1473,
+    "sha256": "30e614e6f702ff70a00d136d6278a8229a8f33ba565f61a69e85285ecb35f90f"
+  },
+  {
+    "path": "app/lib/models/chat_message.dart",
+    "size": 677,
+    "sha256": "a6a33a21aa4ef0ffdd039a6aa5184a41861bff3d1136928dcb5ee9e472dc5ca6"
+  },
+  {
+    "path": "app/lib/models/discovery_profile.dart",
+    "size": 1156,
+    "sha256": "163b49af63c1db1304497afccf252b29ae24043976371bac0412ef116e0edf21"
+  },
+  {
+    "path": "app/lib/models/match_item.dart",
+    "size": 855,
+    "sha256": "a75ec7e1d2fcb5e5ffa35e525f17c819426374cd276b33bb919451e76c5f8ad4"
+  },
+  {
+    "path": "app/lib/models/movie.dart",
+    "size": 1045,
+    "sha256": "88099ff91ad6e614ee5ec6f8a15d6b93452038bfca99182a22d0f9d00c9d8877"
+  },
+  {
+    "path": "app/lib/screens/ai/ai_screen.dart",
+    "size": 5692,
+    "sha256": "4f48cb350e634386393778a55b40a1af5bf45c8b728af65bacb28d56424a0d59"
+  },
+  {
+    "path": "app/lib/screens/auth/login_screen.dart",
+    "size": 4780,
+    "sha256": "cee10cb7ea4854a5df1a71961c787ef1fb5e9eec9403d510e6369e3a8f9a91cf"
+  },
+  {
+    "path": "app/lib/screens/auth/register_screen.dart",
+    "size": 4718,
+    "sha256": "5c67d9f82c016cc349a693bcff3acafa4f5b7e57166433d9d2bbd346af55ad91"
+  },
+  {
+    "path": "app/lib/screens/chat/chat_screen.dart",
+    "size": 9642,
+    "sha256": "e3678c44ed907018d6a80a1bb054a134c0eacc792b9bc5d7bc45425349ce9352"
+  },
+  {
+    "path": "app/lib/screens/discover/discover_screen.dart",
+    "size": 9992,
+    "sha256": "980c5b71742281443869a988d69978aef46c54d3054e3fc670d1471c5295ae76"
+  },
+  {
+    "path": "app/lib/screens/home/home_screen.dart",
+    "size": 10847,
+    "sha256": "ebb5903ffdf604d46fe4391df441542b51da6743ba5a95b70e7933f06ca28235"
+  },
+  {
+    "path": "app/lib/screens/home/home_shell.dart",
+    "size": 1337,
+    "sha256": "1941aaa75399df8e77b06525daa4990db16b01938aacf5d5742ae29f01a5f87c"
+  },
+  {
+    "path": "app/lib/screens/matches/matches_screen.dart",
+    "size": 4335,
+    "sha256": "5b53d47f841af2be4c86fd4b7ab39e0b81d6b4ad3fcc05f542e3a8fed6f47aa9"
+  },
+  {
+    "path": "app/lib/screens/movie/movie_detail_screen.dart",
+    "size": 6100,
+    "sha256": "0271ebcce5c8f1ddb49975a4efb478b57db0dd20e6bea299e52c3a2ce353891f"
+  },
+  {
+    "path": "app/lib/screens/notifications/notifications_screen.dart",
+    "size": 2979,
+    "sha256": "4cb9a66f0d22af49b0b7f1f2b1551429e609df105ca609018ecf096b91ee0ca7"
+  },
+  {
+    "path": "app/lib/screens/onboarding_screen.dart",
+    "size": 5649,
+    "sha256": "ed72bae880612c5a71719129e60998cefe52e4772b053af7461ebc63c5bccc08"
+  },
+  {
+    "path": "app/lib/screens/premium/premium_screen.dart",
+    "size": 10029,
+    "sha256": "e3a7322b9122d48d3641db2b99903b30f05b9b1231d8fee753487aa19f41ce6a"
+  },
+  {
+    "path": "app/lib/screens/profile/profile_screen.dart",
+    "size": 7391,
+    "sha256": "afa5dd180caaa59d53288853f416576e59d21d78a649bad10d236abc83ee7d1b"
+  },
+  {
+    "path": "app/lib/screens/profile/taste_setup_screen.dart",
+    "size": 2931,
+    "sha256": "ab81fce9e78ef40dee960d28d64982a1da297646a8fed5586d1a82fc4d05d30f"
+  },
+  {
+    "path": "app/lib/screens/root_gate.dart",
+    "size": 651,
+    "sha256": "4027f5a5c619381ac75d1cf2ba12c77d987b666c865e7fcdbc11dadfe2011058"
+  },
+  {
+    "path": "app/lib/screens/splash_screen.dart",
+    "size": 1235,
+    "sha256": "02cc80526c086b5849f6a6c684b869ae753444ae0183829e85fe20cb0c398671"
+  },
+  {
+    "path": "app/lib/services/ai_service.dart",
+    "size": 1232,
+    "sha256": "c24d13dd7ef13e45638a5221c4c8839408c2b5e056790663ade9eaa3841bb3cc"
+  },
+  {
+    "path": "app/lib/services/auth_service.dart",
+    "size": 2831,
+    "sha256": "c27f4451f4913c611b9c0730fbcffb03445bb7f15476d15f938f212855ca26ba"
+  },
+  {
+    "path": "app/lib/services/catalog_service.dart",
+    "size": 1512,
+    "sha256": "eacaa2f8c3c0623a07181e294a6cb6cd51fd3b92e64e7993f1ae96ed78b91994"
+  },
+  {
+    "path": "app/lib/services/chat_service.dart",
+    "size": 1305,
+    "sha256": "17c11314825f38be2a5db331bb1f6d665d5075b191dd291c75095d4b3256296f"
+  },
+  {
+    "path": "app/lib/services/demo_data.dart",
+    "size": 2836,
+    "sha256": "5a36f8cb4de4afcd96937a174f55e3c8e58354e98bd1e9fd49aa2a62148012b9"
+  },
+  {
+    "path": "app/lib/services/matching_service.dart",
+    "size": 1450,
+    "sha256": "4b5990b187ef32bdc41a94ca0a329ea1dc9d6178f7b57588fa90841601eb57fb"
+  },
+  {
+    "path": "app/lib/services/notification_service.dart",
+    "size": 1360,
+    "sha256": "653ee47b559d244b66f72ba7afedd8a0add7de6101ae531c1aae54fc16f7afcc"
+  },
+  {
+    "path": "app/lib/services/premium_service.dart",
+    "size": 1531,
+    "sha256": "f82428144d75a7f46cf3334c0b2fb6422177d9b930669f036bdcf282f8ebfd62"
+  },
+  {
+    "path": "app/lib/services/profile_service.dart",
+    "size": 673,
+    "sha256": "050790c54b1e9618c5bc56eda2c5539a66ee61e3905c720bdbdf3bb38e05deba"
+  },
+  {
+    "path": "app/lib/state/session_controller.dart",
+    "size": 1403,
+    "sha256": "5b58acaa3b65b8c60b87b50930d5384155c395f05992ca7ebb2f2adaa337ab59"
+  },
+  {
+    "path": "app/pubspec.yaml",
+    "size": 769,
+    "sha256": "ce7a624b1fe33d219b93f7886638a1790a509d634b67a39c6c0ecac75898f666"
+  },
+  {
+    "path": "backend/.htaccess",
+    "size": 370,
+    "sha256": "3dacfd8dce47c008b1f8a36632b203ee811d661f415372086c590cc31d5112a0"
+  },
+  {
+    "path": "backend/README_HOSTING.txt",
+    "size": 1006,
+    "sha256": "7401282f4b0bdce158ecfdb14b90c657b17eda97865bda19b8a4c1f0c6576be9"
+  },
+  {
+    "path": "backend/admin/index.php",
+    "size": 10118,
+    "sha256": "06adb0449311199f748107f0612553294125535955c981e376057c4179bc0b9d"
+  },
+  {
+    "path": "backend/admin/login.php",
+    "size": 1954,
+    "sha256": "382fa568db68abc9fe72c866a764ff34af91d78691502f0929a014c17e961ecb"
+  },
+  {
+    "path": "backend/admin/logout.php",
+    "size": 96,
+    "sha256": "fb947ea23fe7493a9eaa83500cd0f85156a6135c81f84745a51adbe3350daa5f"
+  },
+  {
+    "path": "backend/app/auth.php",
+    "size": 1667,
+    "sha256": "6140ede092513e0af81af0515e29787a01c49ae4cb4c183dc8d2a7da96a8e03a"
+  },
+  {
+    "path": "backend/app/bootstrap.php",
+    "size": 865,
+    "sha256": "7725283771330a1ec50c042538b46b3c6b16565b8061c2707880626748077d72"
+  },
+  {
+    "path": "backend/app/config.example.php",
+    "size": 603,
+    "sha256": "0f96cf26503b6f6787e0dceb9e11ac560c9e5a11327683449a980707451e2903"
+  },
+  {
+    "path": "backend/app/db.php",
+    "size": 712,
+    "sha256": "c85e77d610ba41de9b5542dc75f08b7d52c8d4b8468ead91e995d8a063d9784d"
+  },
+  {
+    "path": "backend/app/helpers.php",
+    "size": 4886,
+    "sha256": "8b14324c91f33e18efb23ef4792f82294d385a4f6cb1978ea40a03fcbcd7781e"
+  },
+  {
+    "path": "backend/index.php",
+    "size": 24010,
+    "sha256": "02956ee6639621ccfa6ea1f45371b460f812fbf8609f5f019a2e1fab8dc34105"
+  },
+  {
+    "path": "backend/install.php",
+    "size": 9470,
+    "sha256": "93350b5ee22a7d5b39ed2f647ee45ba0c1396df1b495935066f46a4648775d1b"
+  },
+  {
+    "path": "backend/schema.sql",
+    "size": 8326,
+    "sha256": "086413bba986550331bf5c2c93564092fad03d1f416b0bcc6230e6e17dd5e5c9"
+  },
+  {
+    "path": "backend/storage/.htaccess",
+    "size": 33,
+    "sha256": "1581faf462f67052c23dee5420cf8c329d6159b54ac433b4eed97a74f3e9ab51"
+  },
+  {
+    "path": "scripts/build_android.sh",
+    "size": 598,
+    "sha256": "f22d85db31ce21ca0198da3cc1b472a579561c59aab86539a8aa5f1b5ed60052"
+  },
+  {
+    "path": "scripts/build_ios.sh",
+    "size": 529,
+    "sha256": "1a1427aa0499daeabf02a1470991c528815c70c0e1141de7e1f0e0612dc5ebcd"
+  },
+  {
+    "path": "scripts/prepare_flutter.ps1",
+    "size": 432,
+    "sha256": "96e7699babb26a3900532811210743c2f7864b5bf0dc018d9904d37aab7a2100"
+  },
+  {
+    "path": "scripts/prepare_flutter.sh",
+    "size": 432,
+    "sha256": "1ba95df95d6d600e741828b07554102d8023ea94379e99c8edb48ec7c14db943"
+  },
+  {
+    "meta_version": "1.0.2",
+    "tmdb_full_movie_sync": true,
+    "tmdb_sync_method": "official_daily_id_export_resumable_queue"
+  }
+]
