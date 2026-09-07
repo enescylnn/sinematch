@@ -1,0 +1,37 @@
+name: sinematch
+description: SineMatch - film, yapay zeka, eşleşme ve sohbet uygulaması.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.12.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  shared_preferences: ^2.5.5
+  provider: ^6.1.5+1
+  cached_network_image: ^4.0.0
+  in_app_purchase: ^3.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/brand/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/brand/app_icon_1024.png
+  min_sdk_android: 24
+  remove_alpha_ios: true
+  adaptive_icon_background: "#07080C"
+  adaptive_icon_foreground: assets/brand/app_icon_foreground.png
